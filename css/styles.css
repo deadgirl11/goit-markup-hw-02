@@ -1,0 +1,286 @@
+
+/* обнуляющие, общие стили  и цсс переменные */
+
+html {
+    box-sizing: border-box;
+ }
+ *,*::before,
+ *::after {
+         box-sizing: inherit;
+     }
+     
+ul{
+    list-style: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root{
+    --black-text-color:#212121;
+    --gray-text-color:#757575;
+    --blue-text-color:#2196F3;
+    --background-white-color:#ffffff;
+    --footer-text-gray:rgba(255, 255, 255, 0.6);
+    --footer-bgc:#2F303A;
+    --portfolio-selector-bgc:#F5F4FA;
+}
+body{
+    background-color: var(--background-white-color);
+    color: var(--black-text-color);
+    font-family:  'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+}
+
+
+/* стили для хедера */
+
+
+.logo-first-word{
+    color: var(--blue-text-color);
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 31px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.logo-second-word{
+    color: var(--black-text-color);
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 31px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.nav-item-link{
+    color: var(--black-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+.nav-item-link:hover{
+    color: var(--blue-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    transition:  0.3s;
+    text-transform: capitalize;
+}
+.contacts-item-link{
+    color: var(--black-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+.contacts-item-link:hover{
+    color: var(--blue-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    transition: 0.3s;
+    text-transform: capitalize;
+}
+.contacts-item-number{
+    color: var(--gray-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+.contacts-item-number:hover{
+    color: var(--blue-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    transition: 0.3s;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+/* стили для первой секции с бэкграундом */
+
+
+.bg-image-text{
+    color: var(--background-white-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background-color: #111;
+}
+.bg-image-btn{
+    color: var(--background-white-color);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    background-color: var(--blue-text-color);
+    text-transform: capitalize;
+    border: none;
+}
+
+
+/* стили для секции с качествами */
+
+
+.qualities-list-first-line{
+    color: var(--black-text-color);
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.qualities-list-second-line{
+    color: var(--gray-text-color);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+/* стили для повторяющегося заголовка */
+
+
+.standart-article{
+    color: var(--black-text-color);
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+}
+
+
+/* стили для секции с предостовляемыми услушами  */
+
+
+.what-we-do-list-text{
+    color: var(--background-white-color);
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #111111;
+}
+
+
+/* стили для секции "наша команда" */
+
+
+.our-team-list-first-line{
+    color: var(--black-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+.our-team-list-second-line{
+    color:var(--gray-text-color);
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+
+/* стили для футера */
+
+
+.footer{
+    background-color: var(--footer-bgc);
+}
+.footer-adres{
+    color: var(--background-white-color);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+}
+.footer-email{
+    color: var(--footer-text-gray);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+}
+.footer-number{
+    color: var(--footer-text-gray);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+}
+.footer-logo-second-word{
+    color: var(--background-white-color);
+    font-family: 'Raleway', sans-serif;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+}
+.footer-social-media-article{
+    color: var(--background-white-color);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+.footer-form-article{
+    color: var(--background-white-color);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+
+/* стили для портфолио */
+
+
+.portfolio-selector-link{
+    color: var(--black-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: capitalize;
+    background-color:  var(--portfolio-selector-bgc);
+}
+.portfolio-selector-link:hover{
+    color: var(--background-white-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: capitalize;
+    background-color:  var(--blue-text-color);
+    transition: 0.5s;
+}
+
+
+/* стили для  основной секция портфолио */
+
+
+.portfolio-item-text-first-line{
+    color: var(--black-text-color);
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    font-weight: bold;
+}
+.portfolio-item-text-second-line{
+    color: var(--gray-text-color);
+    font-size: 16px;
+    line-height: 30px;
+}
