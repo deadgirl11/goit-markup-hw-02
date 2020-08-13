@@ -258,10 +258,7 @@ body{
     text-transform: capitalize;
     background-color:  var(--portfolio-selector-bgc);
 }
-.portfolio-item-img{
-    width: 100%;
-    height: 100%;
-}
+
 .portfolio-selector-link:hover{
     color: var(--background-white-color);
     font-weight: 500;
